@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Gommano Group – Irrigation, Solaire, Agriculture | Targuist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body><svg style="display:none">
+        <symbol id="wi" viewBox="0 0 24 24">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+        </symbol>
+    </svg>
+    <div class="top"><span>📍 Royal Army Street, Lotissement Al Amal, Targuist</span><span>📞 0661849420</span></div>
+    <nav>
+        <div class="lg"><b>G</b>OMMANO</div>
+        <div class="lk"><a href="#cats">Catégories</a><a href="#prod">Produits</a><a href="#faq">FAQ</a><a
+                href="#contact">Contact</a></div><button class="lb" id="lb" onclick="lg()">العربية</button><button
+            class="cb" onclick="pn(1)"> Panier (<span id="n">0</span>)</button>
+    </nav>
+    <div class="hero">
+        <div>
+            <p class="ar">نقود الخطوط الحيوية .. لنزرع اليوم ونحصد غدا</p>
+            <h1>Irrigation, <em>énergie solaire</em> et agriculture durable</h1>
+            <p>Bassins, pompage solaire, biostimulants, équipements et bardage PVC. Conseil gratuit et livraison dans la
+                région.</p>
+            <a class="btn" target="_blank"
+                href="https://wa.me/212661849420?text=Bonjour%2C%20je%20voudrais%20un%20devis"><svg class="wi">
+                    <use href="#wi" />
+                </svg>Devis gratuit</a><a class="btn o" href="#prod">Voir les produits</a>
+        </div>
+        <div class="hv" id="hv"></div>
+    </div>
+    <div class="strip">
+        <div><span>✅ Devis gratuit</span><span>🚚 Livraison régionale</span><span>🛠️ Sur mesure</span><span><svg
+                    class="wi">
+                    <use href="#wi" />
+                </svg>Réponse rapide WhatsApp</span></div>
+    </div>
+    <section id="cats">
+        <div class="t rv">
+            <h2>Nos univers</h2>
+            <p>Tout pour l’agriculteur moderne</p>
+        </div>
+        <div class="cats rv">
+            <a class="cat" href="#prod" onclick="sc('irrigation')"><i>💧</i>Irrigation</a><a class="cat" href="#prod"
+                onclick="sc('solaire')"><i>☀️</i>Énergie solaire</a><a class="cat" href="#prod"
+                onclick="sc('agricole')"><i>🌱</i>Agriculture</a><a class="cat" href="#prod"
+                onclick="sc('construction')"><i>🪵</i>Construction</a><a class="cat" href="#prod"
+                onclick="sc('equipement')"><i>⚙️</i>Équipement</a>
+        </div>
+    </section>
+    <section id="prod" style="background:var(--soft);max-width:none">
+        <div style="max-width:1180px;margin:auto">
+            <div class="t rv">
+                <h2>Nos produits</h2>
+                <p>Ajoutez au panier et commandez par WhatsApp</p>
+            </div>
+            <div class="bar"><input id="s" placeholder="🔍 Rechercher un produit…" oninput="draw()"><select id="so"
+                    onchange="draw()">
+                    <option value="0">Trier: par défaut</option>
+                    <option value="1">Nom A → Z</option>
+                </select></div>
+            <div class="chips" id="ch"></div>
+            <div class="grid" id="g"></div>
+        </div>
+    </section>
+    <section>
+        <div class="t rv">
+            <h2>Pourquoi Gommano ?</h2>
+        </div>
+        <div class="ft rv">
+            <div><i>⚡</i>
+                <h3>Innovation</h3>Solutions modernes et économes.
+            </div>
+            <div><i>🏅</i>
+                <h3>Qualité</h3>Produits fiables et garantis.
+            </div>
+            <div><i>🌱</i>
+                <h3>Durabilité</h3>Respect de l’eau et du sol.
+            </div>
+            <div><i>🤝</i>
+                <h3>Partenariat</h3>Conseil et suivi après-vente.
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="t rv">
+            <h2>Comment commander ?</h2>
+        </div>
+        <div class="ft steps rv">
+            <div>
+                <h3>Choisissez</h3>Ajoutez vos produits au panier.
+            </div>
+            <div>
+                <h3>Envoyez</h3>La commande arrive sur notre WhatsApp.
+            </div>
+            <div>
+                <h3>Confirmation</h3>Nous vous appelons pour valider.
+            </div>
+            <div>
+                <h3>Livraison</h3>Réception ou retrait à Targuist.
+            </div>
+        </div>
+    </section>
+    <section id="faq">
+        <div class="t rv">
+            <h2>Questions fréquentes</h2>
+        </div>
+        <div class="rv">
+            <details>
+                <summary>Livrez-vous en dehors de Targuist ?</summary>
+                <p>Oui, envoyez-nous votre ville sur WhatsApp pour connaître le délai.</p>
+            </details>
+            <details>
+                <summary>Faites-vous l’installation solaire ?</summary>
+                <p>Oui, étude, fourniture et installation de pompage solaire.</p>
+            </details>
+            <details>
+                <summary>Comment payer ?</summary>
+                <p>Le paiement est confirmé avec notre équipe lors de l’appel de validation.</p>
+            </details>
+            <details>
+                <summary>Puis-je avoir un devis sur mesure ?</summary>
+                <p>Oui, bassins, machines et projets d’irrigation sont faits sur mesure.</p>
+            </details>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="cta rv">
+            <h2>Un projet ? Parlons-en.</h2>
+            <p>📍 Royal Army Street, Al Amal, Targuist<br>📞 0661849420</p><a class="btn" target="_blank"
+                href="https://wa.me/212661849420"><svg class="wi">
+                    <use href="#wi" />
+                </svg>WhatsApp</a><a class="btn" href="tel:0661849420">📞 Appeler</a>
+        </div>
+        <div style="margin-top:22px;border-radius:22px;overflow:hidden;border:1px solid var(--bd);box-shadow:var(--sh)">
+            <div style="position:relative;height:420px;background:#e8eaed"><a target="_blank"
+                    href="https://www.google.com/maps/search/?api=1&query=Targuist+Maroc"
+                    style="display:block;height:100%"><svg viewBox="0 0 800 420" preserveAspectRatio="xMidYMid slice"
+                        style="width:100%;height:100%;display:block">
+                        <rect width="800" height="420" fill="#f1f3f4" />
+                        <path d="M0,330 Q150,300 300,340 T800,320 V420 H0Z" fill="#aadaff" />
+                        <rect x="560" y="40" width="190" height="130" rx="14" fill="#c8e6c9" />
+                        <rect x="30" y="230" width="140" height="80" rx="14" fill="#c8e6c9" />
+                        <g fill="#e8eaed" stroke="#dadce0">
+                            <rect x="60" y="40" width="130" height="80" />
+                            <rect x="250" y="40" width="120" height="80" />
+                            <rect x="420" y="40" width="110" height="80" />
+                            <rect x="60" y="150" width="130" height="60" />
+                            <rect x="420" y="190" width="110" height="90" />
+                            <rect x="580" y="200" width="150" height="80" />
+                            <rect x="250" y="240" width="120" height="50" />
+                        </g>
+                        <g fill="none" stroke-linecap="round">
+                            <path d="M0,140H800M220,0V330M390,0V330M545,0V330M0,215H800" stroke="#dadce0"
+                                stroke-width="16" />
+                            <path d="M0,140H800M220,0V330M390,0V330M545,0V330M0,215H800" stroke="#fff"
+                                stroke-width="12" />
+                            <path d="M-10,180 Q300,120 820,170" stroke="#f0b429" stroke-width="22" />
+                            <path d="M-10,180 Q300,120 820,170" stroke="#fde293" stroke-width="17" />
+                        </g>
+                        <g font-family="Roboto,Arial,sans-serif" font-size="11" fill="#5f6368"><text x="40"
+                                y="136">Royal Army Street</text><text x="410" y="210">Al Amal</text><text x="610"
+                                y="110" fill="#188038">Parc</text><text x="300" y="365" fill="#1a73e8">Oued</text></g>
+                        <circle cx="300" cy="150" r="14" fill="#ea4335" opacity=".25">
+                            <animate attributeName="r" values="14;40" dur="1.8s" repeatCount="indefinite" />
+                            <animate attributeName="opacity" values=".35;0" dur="1.8s" repeatCount="indefinite" />
+                        </circle>
+                        <path d="M300,156C276,130 272,114 272,104a28,28 0 0 1 56,0c0,10-4,26-28,52z" fill="#ea4335"
+                            stroke="#b31412" stroke-width="2" />
+                        <circle cx="300" cy="104" r="10" fill="#7a1a12" />
+                    </svg></a>
+                <a target="_blank" href="https://www.google.com/maps/dir/?api=1&destination=Targuist+Maroc"
+                    style="position:absolute;top:14px;inset-inline-start:14px;background:#fff;color:#202124;border-radius:10px;padding:12px 16px;text-decoration:none;box-shadow:0 2px 8px #0004;max-width:230px;font-family:Roboto,Arial,sans-serif"><b
+                        style="font-size:15px">Gommano Group</b><br><span style="font-size:12px;color:#5f6368">Targuist,
+                        Maroc</span><br><span style="font-size:13px;color:#1a73e8;font-weight:600">Google Maps
+                        ↗</span></a>
+                <div
+                    style="position:absolute;bottom:18px;inset-inline-end:14px;display:grid;box-shadow:0 2px 8px #0004;border-radius:8px;overflow:hidden;background:#fff;color:#5f6368;font:22px/38px Arial;text-align:center;width:38px">
+                    <span>+</span><span style="border-top:1px solid #e0e0e0">−</span></div>
+            </div>
+        </div>
+        <p style="text-align:center;color:var(--mut);font-size:14px">📍 Royal Army Street, Al Amal, Targuist · <a
+                target="_blank" href="https://www.google.com/maps/search/?api=1&query=Targuist+Maroc"
+                style="color:var(--g)">Agrandir la carte</a></p>
+    </section>
+    <footer><b>GOMMANO GROUP</b> – Driving the vital lines<br>© 2026 Tous droits réservés :Dirct by Mounir asrih</footer>
+    <a class="wa" target="_blank" href="https://wa.me/212661849420"><svg class="wi">
+            <use href="#wi" />
+        </svg></a>
+    <div class="ov" id="ov" onclick="if(event.target==this)this.classList.remove('o')">
+        <div class="md" id="md"></div>
+    </div>
+    <div id="pn">
+        <h3>🛒 Votre commande <button onclick="pn(0)"
+                style="float:right;border:0;background:none;color:inherit;font-size:20px">✕</button></h3>
+        <div id="it"></div>
+        <p id="em">Votre panier est vide.</p><input id="nm" placeholder="Nom complet"><input id="ph"
+            placeholder="Téléphone"><input id="ct" placeholder="Ville / adresse"><button class="btn"
+            style="width:100%;margin:10px 0" onclick="send()">Envoyer par WhatsApp</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
